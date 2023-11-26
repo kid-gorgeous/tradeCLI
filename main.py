@@ -3,20 +3,13 @@
 # It also provides a dataset class, and an exchange class. The exchange class is the most important, as it will 
 #    interact with the coinbase API and CLI to commit user interactions.
 
+
 # This is not the working model. Please feel free to contact me for the working model, and cwd!
-
-
-# Helper function to install requirements from requirements.txt file
-import subprocess
-def install_requirements(command):
-    process = subprocess.Popen(command, stdout=subprocess.PIPE, shell=True)
-    stdout = process.communicate()
 
 
 if __name__ == "__main__":
 
-    # make preparations for compilation
-    install_requirements('pip3 install -r requirements.txt')
+
     from dataset import dataset
     import keys as k
 
@@ -39,8 +32,7 @@ if __name__ == "__main__":
     #  manually enter the API key and secret key in a keys.py file. 
     from cmd import Cli
     cmd = Cli()                                     # Create a new instance of the CLI
-    cmd.user_info()                                 # returns a tuple
-    cmd.accounts()                                  # returns a list of tuples
+    cmd.ArgumentParser()                            # Parse the arguments provided by the user
 
 
     
