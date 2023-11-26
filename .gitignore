@@ -1,0 +1,12 @@
+# Files 
+
+
+
+# Directories
+__pycache__/
+
+
+# File type
+*.csv
+*.txt
+*.DS_Store
