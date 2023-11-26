@@ -3,6 +3,8 @@
 # It also provides a dataset class, and an exchange class. The exchange class is the most important, as it will 
 #    interact with the coinbase API and CLI to commit user interactions.
 
+# This is not the working model. Please feel free to contact me for the working model, and cwd!
+
 
 # Helper function to install requirements from requirements.txt file
 import subprocess
